@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DsaController {
     private final DsaService dsaService;
     private final Environment environment;
+    private String a = "23";
 
     @GetMapping("/all")
     public ResponseEntity<String> saySomething() {
