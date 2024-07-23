@@ -1,0 +1,15 @@
+environment:
+  name: DEV
+
+spring:
+  application:
+    name: DsaTrackerServerDev
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/dsatracker
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
